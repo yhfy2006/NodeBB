@@ -3,11 +3,6 @@
     "secret": "mym881115",
     "database": "mongo",
     "mongo": {
-        "host": "127.0.0.1",
-        "port": 27017,
-        "username": "",
-        "password": "",
-        "database": "nodebb",
-        "uri": "mongodb+srv://yhfy2006:mym881115@cluster0.qnxncbj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        "uri": "mongodb+srv://yhfy2006:mym881115@cluster0.qnxncbj.mongodb.net/nodebb?retryWrites=true&w=majority&appName=Cluster0"
     }
 }
