@@ -1,6 +1,6 @@
 FROM --platform=$BUILDPLATFORM node:lts as npm
 
-RUN mkdir -p /usr/src/build && 
+RUN mkdir -p /usr/src/build
 WORKDIR /usr/src/build
 
 ARG NODE_ENV
