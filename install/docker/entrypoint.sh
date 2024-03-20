@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export CONFIG_DIR="${CONFIG_DIR:-/opt/config}"
-export CONFIG=$CONFIG_DIR/config.json
+export CONFIG=/usr/src/app/config.json
 export FORCE_BUILD_BEFORE_START="${FORCE_BUILD_BEFORE_START:-false}"
 
 # Supported verbs: install (web install), setup (interactive CLI session). Default: web install
@@ -28,11 +28,12 @@ ln -fs $CONFIG_DIR/package-lock.json package-lock.json
 
 npm install --omit=dev
 
-if [[ -n $SETUP ]]; then
-  echo "Setup environmental variable detected"
-  echo "Starting setup session"
-  ./nodebb setup --config=$CONFIG
-elif [ -f $CONFIG ]; then
+# if [[ -n $SETUP ]]; then
+#   echo "Setup environmental variable detected"
+#   echo "Starting setup session"
+#   ./nodebb setup --config=$CONFIG
+# el
+if [ -f $CONFIG ]; then
   echo "Config file exist at $CONFIG, assuming it is a valid config"
   echo "Starting forum"
   if [ "$FORCE_BUILD_BEFORE_START" = true ]; then

@@ -1,12 +1,10 @@
 {
     "url": "http://localhost:4567",
-    "secret": "f9f8b2d4-d6e6-498f-be0e-f45f1279820a",
+    "secret": "932b0b46-618d-4d4f-af69-630d7ab76a61",
     "database": "mongo",
     "mongo": {
-        "host": "127.0.0.1",
-        "port": 27017,
-        "username": "",
-        "password": "",
+        "username": "yhfy2006",
+        "password": "mym881115",
         "database": "nodebb",
         "uri": "mongodb+srv://yhfy2006:mym881115@cluster0.qnxncbj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     },
