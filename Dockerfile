@@ -1,7 +1,8 @@
 FROM --platform=$BUILDPLATFORM node:lts as npm
 
 RUN mkdir -p /usr/src/build && \
-    chown -R node:node /usr/src/build
+    chown -R node:node /usr/src/build \
+    chown -R node:node /opt/config
 WORKDIR /usr/src/build
 
 ARG NODE_ENV
